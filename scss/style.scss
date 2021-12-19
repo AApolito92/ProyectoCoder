@@ -1,16 +1,13 @@
 
 @import "base/maps";
-@import "components/header";
-@import "components/main";
-@import "components/menu";
-@import "components/footer";
+
 
 
 /* generales */
 
 a {
     text-decoration: none; 
-}f
+}
  
 body {
     
@@ -24,3 +21,8 @@ h2,h3,h4 {
 }
 
 /* fin generales */
+
+@import "components/header";
+@import "components/main";
+@import "components/menu";
+@import "components/footer";

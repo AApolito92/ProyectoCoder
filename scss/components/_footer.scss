@@ -23,60 +23,60 @@ footer {
                     color: darkred;          
                 }
             }
+            .media {    
+                padding: 2% 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                list-style-type: none;
+                justify-content: space-around;           
+                   li{
+                       width: 33%;                       
+                       a {
+                           &:hover {
+                               img {
+                                   background-color: darkred;
+                               }
+                           }
+                           img {
+                               border-radius: 20%;
+                               width: 20%;
+                           }
+                       }
+                   }
+                
+             }
+
+
         }
-  }
 
- 
-
-
- .media {
-    
-     padding: 2% 0;
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     list-style-type: none;
-     justify-content: space-around;
-
-        li{
-            width: 33%;
+        #contacto { 
             
-            a {
-                &:hover {
-                    img {
-                        background-color: darkred;
-                    }
-                }
-                img {
-                    border-radius: 20%;
-                    width: 20%;
-                }
-            }
-        }
-     
-  }
-
-
- 
-
-
-
   form {
     margin: 0 auto;
     text-align: center;
     display: flex;
     flex-direction: column;    
     align-items: center;
-    
+
+    label {
+        margin: 1% auto;
+    }
+    .boton {
+        margin: 1% 0;
+    }    
 } 
+        }
+  }
 
-label {
-    margin: 1% auto;
-}
+ 
 
-.boton {
-    margin: 1% 0;
-}
+
+ 
+
+
+
+
 
 
 

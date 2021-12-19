@@ -1,3 +1,18 @@
+/* generales */
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0%;
+  background-color: black;
+}
+
+h2, h3, h4 {
+  text-decoration: underline;
+}
+
+/* fin generales */
 /* header */
 .navbar-brand {
   font-family: "Anton", sans-serif;
@@ -118,7 +133,6 @@ section h3 {
   justify-content: space-around;
 }
 
-/* .locales y hover van dentro de un extend*/
 /* fin sucursales */
 .bienvenidos {
   text-align: center;
@@ -144,7 +158,7 @@ section h3 {
     padding-bottom: 5%;
   }
 }
-/*menu.html*/
+/*Menu.html*/
 .menu article {
   margin: 0 auto;
   padding-bottom: 10%;
@@ -269,8 +283,7 @@ footer nav a {
 footer nav a:hover {
   color: darkred;
 }
-
-.media {
+footer nav .media {
   padding: 2% 0;
   display: flex;
   flex-direction: row;
@@ -278,48 +291,30 @@ footer nav a:hover {
   list-style-type: none;
   justify-content: space-around;
 }
-.media li {
+footer nav .media li {
   width: 33%;
 }
-.media li a:hover img {
+footer nav .media li a:hover img {
   background-color: darkred;
 }
-.media li a img {
+footer nav .media li a img {
   border-radius: 20%;
   width: 20%;
 }
-
-form {
+footer #contacto form {
   margin: 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-label {
+footer #contacto form label {
   margin: 1% auto;
 }
-
-.boton {
+footer #contacto form .boton {
   margin: 1% 0;
 }
 
 /* fin footer */
-/* generales */
-a {
-  text-decoration: none;
-}
-
-f body {
-  margin: 0%;
-  background-color: black;
-}
-
-h2, h3, h4 {
-  text-decoration: underline;
-}
-
-/* fin generales */
 
 /*# sourceMappingURL=estilo.css.map */
