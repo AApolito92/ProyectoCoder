@@ -173,52 +173,24 @@ section h3 {
     padding-top: 10%;
   }
 }
-
-.burger-anchor-position1 {
-  grid-area: burger1;
-}
-
-.burger-anchor-position2 {
-  grid-area: burger2;
-}
-
-.burger-anchor-position3 {
-  grid-area: burger3;
-}
-
-.burger-anchor-position4 {
-  grid-area: burger4;
-}
-
-.burger-anchor-position5 {
-  grid-area: burger5;
-}
-
-.burger-anchor-position6 {
-  grid-area: burger6;
-}
-
 .menu article h1 {
   margin: 0 auto;
   grid-area: menuTitulo;
   padding-top: 10px;
   padding-bottom: 3%;
 }
-
-.anchor-position {
+.menu article .anchor-position {
   position: relative;
   padding: 2%;
 }
-
-.anchor-text {
+.menu article .anchor-text {
   position: absolute;
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: cursive;
 }
-
-.hidden-text {
+.menu article .hidden-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -227,39 +199,56 @@ section h3 {
   display: none;
 }
 @media only screen and (max-width: 480px) {
-  .hidden-text {
+  .menu article .hidden-text {
     width: 100%;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
-  .hidden-text {
+  .menu article .hidden-text {
     width: 100%;
   }
 }
-
-.anchor-position:hover .anchor-text {
+.menu article .anchor-position:hover .anchor-text {
   display: none;
   transition: all 1s;
 }
-.anchor-position:hover .hidden-text {
+.menu article .anchor-position:hover .hidden-text {
   display: block;
 }
-.anchor-position:hover img {
+.menu article .anchor-position:hover img {
   filter: blur(5px);
   transition: all 0.5s;
 }
-.anchor-position img {
+.menu article .anchor-position img {
   border-radius: 5%;
 }
 @media only screen and (max-width: 480px) {
-  .anchor-position img {
+  .menu article .anchor-position img {
     width: 100%;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 1440px) {
-  .anchor-position img {
+  .menu article .anchor-position img {
     width: 100%;
   }
+}
+.menu article .burger-1 {
+  grid-area: burger1;
+}
+.menu article .burger-2 {
+  grid-area: burger2;
+}
+.menu article .burger-3 {
+  grid-area: burger3;
+}
+.menu article .burger-4 {
+  grid-area: burger4;
+}
+.menu article .burger-5 {
+  grid-area: burger5;
+}
+.menu article .burger-6 {
+  grid-area: burger6;
 }
 
 /*fin menu.html*/
