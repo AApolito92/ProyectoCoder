@@ -159,22 +159,24 @@ section h3 {
   }
 }
 /*Menu.html*/
-.menu article {
+.menu {
+  padding-top: 5%;
+}
+.menu .main-dish {
   margin: 0 auto;
   padding-bottom: 10%;
   padding-top: 5%;
-  border: 1px solid black;
+  text-align: center;
+  background-image: url(../multimedia/cork.png);
+  width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: "menuTitulo menuTitulo menuTitulo" "burger1 burger2 burger3" "burger4 burger5 burger6";
-  text-align: center;
-  background-image: url(../multimedia/cork.png);
-  width: 80%;
   border: 10px solid black;
 }
 @media only screen and (max-width: 480px) {
-  .menu article {
+  .menu .main-dish {
     padding-top: 10%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -183,28 +185,53 @@ section h3 {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
-  .menu article {
+  .menu .main-dish {
     padding-top: 10%;
   }
 }
-.menu article h1 {
+.menu .main-dish h1 {
   margin: 0 auto;
   grid-area: menuTitulo;
   padding-top: 10px;
   padding-bottom: 3%;
+  font-family: "Anton", sans-serif;
 }
-.menu article .anchor-position {
+.menu .main-dish .anchor-position {
   position: relative;
   padding: 2%;
 }
-.menu article .anchor-text {
+.menu .main-dish .anchor-position:hover .anchor-text {
+  display: none;
+  transition: all 1s;
+}
+.menu .main-dish .anchor-position:hover .hidden-text {
+  display: block;
+}
+.menu .main-dish .anchor-position:hover img {
+  filter: blur(5px);
+  transition: all 0.5s;
+}
+.menu .main-dish .anchor-position img {
+  border-radius: 5%;
+}
+@media only screen and (max-width: 480px) {
+  .menu .main-dish .anchor-position img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1440px) {
+  .menu .main-dish .anchor-position img {
+    width: 100%;
+  }
+}
+.menu .main-dish .anchor-position .anchor-text {
   position: absolute;
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: cursive;
 }
-.menu article .hidden-text {
+.menu .main-dish .anchor-position .hidden-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -213,56 +240,106 @@ section h3 {
   display: none;
 }
 @media only screen and (max-width: 480px) {
-  .menu article .hidden-text {
+  .menu .main-dish .anchor-position .hidden-text {
     width: 100%;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
-  .menu article .hidden-text {
+  .menu .main-dish .anchor-position .hidden-text {
     width: 100%;
   }
 }
-.menu article .anchor-position:hover .anchor-text {
+.menu .main-dish .burger-1 {
+  grid-area: burger1;
+}
+.menu .main-dish .burger-2 {
+  grid-area: burger2;
+}
+.menu .main-dish .burger-3 {
+  grid-area: burger3;
+}
+.menu .main-dish .burger-4 {
+  grid-area: burger4;
+}
+.menu .main-dish .burger-5 {
+  grid-area: burger5;
+}
+.menu .main-dish .burger-6 {
+  grid-area: burger6;
+}
+.menu .side-dish {
+  margin: 0 auto;
+  padding-bottom: 10%;
+  padding-top: 5%;
+  text-align: center;
+  background-image: url(../multimedia/cork.png);
+  width: 80%;
+  border: 10px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "sideTitulo sideTitulo" "side1 side2" "side3 side4" "side5 side6";
+}
+.menu .side-dish h2 {
+  grid-area: sideTitulo;
+  font-family: "Anton", sans-serif;
+}
+.menu .side-dish .anchor-position {
+  position: relative;
+  padding: 2%;
+}
+.menu .side-dish .anchor-position:hover .anchor-text {
   display: none;
   transition: all 1s;
 }
-.menu article .anchor-position:hover .hidden-text {
+.menu .side-dish .anchor-position:hover .hidden-text {
   display: block;
 }
-.menu article .anchor-position:hover img {
+.menu .side-dish .anchor-position:hover img {
   filter: blur(5px);
   transition: all 0.5s;
 }
-.menu article .anchor-position img {
+.menu .side-dish .anchor-position img {
   border-radius: 5%;
+  width: 80%;
 }
 @media only screen and (max-width: 480px) {
-  .menu article .anchor-position img {
+  .menu .side-dish .anchor-position img {
     width: 100%;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 1440px) {
-  .menu article .anchor-position img {
+  .menu .side-dish .anchor-position img {
     width: 100%;
   }
 }
-.menu article .burger-1 {
-  grid-area: burger1;
+.menu .side-dish .anchor-position .anchor-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  font-family: cursive;
+  width: 50%;
 }
-.menu article .burger-2 {
-  grid-area: burger2;
+.menu .side-dish .anchor-position .hidden-text {
+  color: darkred;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: cursive;
+  display: none;
 }
-.menu article .burger-3 {
-  grid-area: burger3;
+@media only screen and (max-width: 480px) {
+  .menu .side-dish .anchor-position .hidden-text {
+    width: 100%;
+  }
 }
-.menu article .burger-4 {
-  grid-area: burger4;
-}
-.menu article .burger-5 {
-  grid-area: burger5;
-}
-.menu article .burger-6 {
-  grid-area: burger6;
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .menu .side-dish .anchor-position .hidden-text {
+    width: 100%;
+  }
 }
 
 /*fin menu.html*/
