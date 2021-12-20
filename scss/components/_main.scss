@@ -7,29 +7,25 @@ main {
     color: white; 
     margin: auto;
     width: 100%;   
-    
-    }
 
     .artesanal {
-        text-align: map-get($map , align );       
-        padding-bottom: 5%; 
+      text-align: map-get($map , align );       
+      padding-bottom: 5%; 
 
-        img {
-        
-          width: 100%;   
-        }
-    
-      }
+      img {
       
-
-      #menuBurger {
-        text-align: map-get($map, align );
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-template-rows: auto;
+        width: 100%;   
       }
-    
-      .burger { 
+  
+    }
+
+    #menuBurger {
+      text-align: map-get($map, align );
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+
+        .burger { 
           img {   
               border-radius: 10%;
               width: 60%;
@@ -45,8 +41,9 @@ main {
                 }
       } 
     }
+    }
     
-    
+       
 /*Nosotros*/
 
   #Nosotros {
@@ -68,58 +65,72 @@ main {
   }
 
 /* fin nosotros*/ 
-/*sucursales*/
 
-  .sucursalesCont {
-      padding-top: 3%;
-  }
+ /*sucursales*/
 
-  section {
-     h3 {
+ .sucursalesCont {
+  padding-top: 3%;
+
+  h3 {
     text-align: center;
     font-size: 2em;
     padding-bottom: 4%;
    } 
-  }
 
-  .contLocales {
+   .contLocales {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;    
-  }
 
-  
-  
+    
   .Locales {    
     @extend %local;
   }
-
-  /* fin sucursales */
-
-
-  .bienvenidos {
-    text-align: map-get($map , align );
-    article {
-      padding-top: 5%;
   }
-}
 
 
+} 
+
+
+/* fin sucursales */
+
+/* Carrousel */
+
+.bienvenidos {
+  text-align: map-get($map , align );
+  article {
+    padding-top: 5%;
+
+    
 #carouselExampleControls {
-    width: 60%;
-    padding-bottom: 5%;
-      @media only screen and (max-width: 480px) {
-        
-            width: 100%;
-            padding-bottom: 5%;
-        
-    }
+width: 60%;
+padding-bottom: 5%;
+  @media only screen and (max-width: 480px) {    
+        width: 100%;
+        padding-bottom: 5%;    
+}
 }
 
 @media only screen and (max-width: 480px) {
-    #carouselExampleControls {
-        width: 100%;
-        padding-bottom: 5%;
-    }
+#carouselExampleControls {
+    width: 100%;
+    padding-bottom: 5%;
 }
+}
+
+}
+}
+
+    }
+
+    /* fin main */
+
+    
+      
+
+      
+    
+     
+
+
